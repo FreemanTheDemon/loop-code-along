@@ -33,3 +33,16 @@ for (let i = 0; i < 3; i++) {
         console.log(`Jamie's health is ${jamieLannisterHealth}`);
     }
 }
+
+let j = 10
+
+var countdown = setInterval(function () {
+    if (j === 0) {
+        console.log('COUNTDOWN: ' + j);
+        console.log('LIFTOFF!')
+        clearInterval(countdown);
+    } else {
+        console.log('COUNTDOWN: ' + j);
+    }
+    j--;
+}, 1000);
